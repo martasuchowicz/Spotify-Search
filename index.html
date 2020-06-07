@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"><link href="https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap" rel="stylesheet">
+    <title>Spotify Search API</title>
+</head>
+<body>
+    <div>
+        <header>
+        <h1>Spotify Search</h1>
+        </header>
+
+    <!-- search container -->
+
+    <section id="container">
+        <input type="text" name="user-input" ></input>
+
+        <select>
+            <option id="artist">artist</option>
+            <option id="album">album</option>
+        </select>
+        <button id="go" >submit</button>
+    </section>
+        
+    <!-- results -->
+
+    <div id="results"></div>
+
+    <!-- more button -->
+        
+    <section id="more-btn">
+        <button id="more">more</button>
+    </section>
+    </div>
+  
+        
+    
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    background: url(background-img2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+div {
+    margin-top: 40vh;
+    margin-left: 10vw;
+}
+
+header {
+    color: white;
+    font-family: "Nova Mono", monospace;
+    font-size: 2rem;
+    text-align: start;
+    padding: 10px;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+    text-decoration: none;
+}
+
+/* search container */
+
+#container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 10px;
+    font-size: 17px;
+    width: 20%;
+    margin-right: 20px;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+select {
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+    font-size: 17px;
+    border: 0 solid white;
+    min-width: 10%;
+    background: #f1f1f1;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+#go {
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+    font-size: 17px;
+    border: 0 solid white;
+    min-width: 10%;
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#go:hover {
+    background-color: white;
+    color: black;
+}
+
+#go:focus {
+    outline: none;
+}
+
+/* results */
+
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 15px;
+}
+
+#div-container {
+    width: 400px;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+#div-container img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+#text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 3px;
+}
+
+#text:hover {
+    color: white;
+}
+
+#text:focus {
+    outline: none;
+}
+
+/* more button */
+
+#more-btn {
+    display: flex;
+    justify-content: center;
+}
+
+#more {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    padding: 6px;
+    border: 0 solid white;
+    background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+    visibility: hidden;
+    z-index: 999;
+    margin-top: 25px;
+    cursor: pointer;
+    border-radius: 8px;
+    min-width: 10%;
+}
+
+#more-button:hover {
+    background-color: white;
+    color: palevioletred;
+}
+
+#more-button:focus {
+    outline: none;
+}
+
+#more-button.on {
+    visibility: visible;
+}
